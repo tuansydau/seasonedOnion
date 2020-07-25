@@ -55,9 +55,9 @@ def write_content(headlineList, contentList):
     # format and write to csv
     format = {'Headline': headlineList, 'Body text': contentList}
     df_urls = pd.DataFrame(format)
-    df_urls.to_csv(r'C:\Users\Tuan\Desktop\Seasoned Onion\articleContent.csv')
+    df_urls.to_csv(r'C:\Users\Tuan\Desktop\Seasoned Onion\archiveContent.csv')
 
-urlList = pd.read_csv(r'C:\Users\Tuan\Desktop\Seasoned Onion\playtest.csv')
+urlList = pd.read_csv(r'C:\Users\Tuan\Desktop\Seasoned Onion\articleUrls.csv')
 
 print("-----------------------")
 print(urlList)
