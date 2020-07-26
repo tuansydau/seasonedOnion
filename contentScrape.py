@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
-import bs4
+import re
+from bs4 import BeautifulSoup
 from selenium.webdriver.common.keys import Keys
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
@@ -23,51 +24,62 @@ driver = webdriver.Chrome(executable_path='C:/bin/chromedriver.exe', options=opt
 
 def get_content(url):
     driver.get(url)
-    headlines = []
     paragraphs = []
     finalHeadline = ""
+    metaTags = ''
 
     #find headline
     try:
         headline = driver.find_elements_by_xpath("/html/body/div[3]/div[4]/div[2]/header/h1/a")
         if headline:
-            print(headline[0].text)
+            #print(headline[0].text)
             finalHeadline = headline[0].text
         else:
             finalHeadline = ""
     except NoSuchElementException:
         finalHeadline = ""
 
-    # dont touch this, it gets body text but not well
+    #find body text kind of
     try:
         content = driver.find_elements_by_class_name("sc-77igqf-0")
         for piece in content:
             paragraphs.append(piece.text)
-        print(paragraphs)
+        #print(paragraphs)
         completeContent = ' '.join(paragraphs)
-        print(completeContent)
+        #print(completeContent)
     except NoSuchElementException:
         completeContent = ""
 
-    return finalHeadline, completeContent
+    #get metadata
+    metaTags = driver.find_element_by_xpath("//meta[@name='news_keywords']").get_attribute("content").lower()
+    #print(metaTags)
 
-def write_content(headlineList, contentList):
+    return finalHeadline, completeContent, metaTags
+
+def write_content(headlineList, contentList, metaDataList):
     # format and write to csv
-    format = {'Headline': headlineList, 'Body text': contentList}
+    print(metaDataList)
+    format = {'Headline': headlineList, 'Body text': contentList, 'Meta Tags': metaDataList}
+    #print(metaDataList)
     df_urls = pd.DataFrame(format)
-    df_urls.to_csv(r'C:\Users\Tuan\Desktop\Seasoned Onion\archiveContent.csv')
+    print(df_urls)
+    df_urls.to_csv(r'C:\Users\Tuan\Desktop\Seasoned Onion\archiveContentMeta.csv')
 
 urlList = pd.read_csv(r'C:\Users\Tuan\Desktop\Seasoned Onion\articleUrls.csv')
 
-print("-----------------------")
-print(urlList)
+#print("-----------------------")
+#print(urlList)
 
 headList = []
 bodyList = []
+metaDataList = []
 
 for url in urlList['0']:
-    head, body = get_content(url)
+    #print(metaDataList)
+    head, body, metaData = get_content(url)
     headList.append(head)
     bodyList.append(body)
+    #print(metaData)
+    metaDataList.append(metaData)
 
-    write_content(headList, bodyList)
+    write_content(headList, bodyList, metaDataList)
