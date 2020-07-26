@@ -7,6 +7,6 @@ option.add_argument('--ignore-certificate-errors-spki-list')
 option.add_argument('--ignore-ssl-errors')
 option.add_argument('--incognito')
 driver = webdriver.Chrome(executable_path='C:/bin/chromedriver.exe', options=option)
-driver.get("https://entertainment.theonion.com/")
-localUrls = []
-searchUrl(driver, "/html/body/div[3]/div[4]/main/div/div[5]/div/a", "sc-759qgu-0", r'C:\Users\Tuan\Desktop\Seasoned Onion\localUrlsTesting.csv', localUrls)
+driver.get("https://politics.theonion.com/")
+politicsUrls = []
+searchUrl(driver, "/html/body/div[3]/div[4]/main/div/div[5]/div/a", "sc-759qgu-0", r'C:\Users\Tuan\Documents\GitHub\seasonedOnion\Webscraping\UrlScrapers\URLs\politicsUrls.csv', politicsUrls)

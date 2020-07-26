@@ -9,4 +9,4 @@ option.add_argument('--incognito')
 driver = webdriver.Chrome(executable_path='C:/bin/chromedriver.exe', options=option)
 driver.get("https://local.theonion.com/")
 localUrls = []
-searchUrl(driver, "/html/body/div[3]/div[4]/main/div/div[5]/div/a", "sc-759qgu-0", r'C:\Users\Tuan\Desktop\Seasoned Onion\localUrls.csv', localUrls)
+searchUrl(driver, "/html/body/div[3]/div[4]/main/div/div[5]/div/a", "sc-759qgu-0", r'C:\Users\Tuan\Documents\GitHub\seasonedOnion\Webscraping\UrlScrapers\URLs\localUrls.csv', localUrls)
