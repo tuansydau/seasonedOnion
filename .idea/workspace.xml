@@ -2,24 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d4fe0222-1ba1-4f3e-947e-e40222ab9d35" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UrlScrapers/archiveScrape.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UrlScrapers/entertainmentScrape.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UrlScrapers/latestScrape.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UrlScrapers/localScrape.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UrlScrapers/politicsScrape.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UrlScrapers/searchUrlsMethod.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UrlScrapers/sportsScrape.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/articleContent.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/articleUrls.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/contentScrape.py" beforeDir="false" afterPath="$PROJECT_DIR$/Webscraping/contentScrape.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hey yall.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/playtest - old.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/playtest.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/politicsUrls - Copy.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/politicsUrls.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testRun.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webscraping/UrlScrapers/URLs/politicsUrls.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webscraping/UrlScrapers/archiveScrape.py" beforeDir="false" afterPath="$PROJECT_DIR$/Webscraping/UrlScrapers/archiveScrape.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webscraping/contentScrape.py" beforeDir="false" afterPath="$PROJECT_DIR$/Webscraping/contentScrape.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,11 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Webscraping/UrlScrapers/archiveScrape.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
-              <caret line="11" column="43" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
+              <caret line="11" column="170" selection-start-line="11" selection-start-column="170" selection-end-line="11" selection-end-column="170" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -57,7 +42,7 @@
         <entry file="file://$PROJECT_DIR$/Webscraping/UrlScrapers/latestScrape.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
-              <caret line="11" column="159" selection-start-line="11" selection-start-column="159" selection-end-line="11" selection-end-column="159" />
+              <caret line="11" column="37" lean-forward="true" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -68,8 +53,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Webscraping/UrlScrapers/localScrape.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="159" selection-start-line="11" selection-start-column="159" selection-end-line="11" selection-end-column="159" />
+            <state relative-caret-position="153">
+              <caret line="9" column="41" lean-forward="true" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -102,10 +87,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Webscraping/UrlScrapers/searchUrlsMethod.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="488">
+              <caret line="37" column="61" lean-forward="true" selection-start-line="37" selection-start-column="61" selection-end-line="37" selection-end-column="61" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Webscraping/contentScrape.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="67" column="78" selection-start-line="67" selection-start-column="78" selection-end-line="67" selection-end-column="78" />
+            <state relative-caret-position="403">
+              <caret line="67" column="88" lean-forward="true" selection-start-line="67" selection-start-column="88" selection-end-line="67" selection-end-column="88" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -150,11 +147,12 @@
         <option value="$PROJECT_DIR$/UrlScrapers/latestScrape.py" />
         <option value="$PROJECT_DIR$/UrlScrapers/politicsScrape.py" />
         <option value="$PROJECT_DIR$/Webscraping/UrlScrapers/sportsScrape.py" />
-        <option value="$PROJECT_DIR$/Webscraping/UrlScrapers/archiveScrape.py" />
         <option value="$PROJECT_DIR$/Webscraping/UrlScrapers/entertainmentScrape.py" />
         <option value="$PROJECT_DIR$/Webscraping/UrlScrapers/latestScrape.py" />
         <option value="$PROJECT_DIR$/Webscraping/UrlScrapers/localScrape.py" />
         <option value="$PROJECT_DIR$/Webscraping/UrlScrapers/politicsScrape.py" />
+        <option value="$PROJECT_DIR$/Webscraping/UrlScrapers/archiveScrape.py" />
+        <option value="$PROJECT_DIR$/Webscraping/contentScrape.py" />
       </list>
     </option>
   </component>
@@ -231,7 +229,28 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.sportsScrape (1)">
+  <component name="RunManager" selected="Python.contentScrape">
+    <configuration name="archiveScrape" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="seasonedOnion" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Webscraping/UrlScrapers" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Webscraping/UrlScrapers/archiveScrape.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="contentScrape" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="seasonedOnion" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -240,11 +259,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Webscraping" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\Tuan\Documents\GitHub\seasonedOnion\Webscraping\contentScrape.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Webscraping/contentScrape.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -316,34 +335,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="sportsScrape" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="seasonedOnion" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/UrlScrapers" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/UrlScrapers/sportsScrape.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.contentScrape" />
+        <item itemvalue="Python.archiveScrape" />
         <item itemvalue="Python.sportsScrape (1)" />
         <item itemvalue="Python.entertainmentScrape" />
         <item itemvalue="Python.localScrape" />
-        <item itemvalue="Python.sportsScrape" />
-        <item itemvalue="Python.contentScrape" />
       </list>
     </recent_temporary>
   </component>
@@ -364,12 +362,12 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25053304" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25053304" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49733475" visible="true" weight="0.30877572" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49733475" visible="true" weight="0.30877572" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49946696" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -401,58 +399,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Webscraping/contentScrape.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="67" column="78" selection-start-line="67" selection-start-column="78" selection-end-line="67" selection-end-column="78" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Webscraping/UrlScrapers/debug.log">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Webscraping/UrlScrapers/searchUrlsMethod.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="579">
-          <caret line="37" column="61" lean-forward="true" selection-start-line="37" selection-start-column="61" selection-end-line="37" selection-end-column="61" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Webscraping/UrlScrapers/entertainmentScrape.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="159" selection-start-line="11" selection-start-column="159" selection-end-line="11" selection-end-column="159" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Webscraping/UrlScrapers/latestScrape.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="159" selection-start-line="11" selection-start-column="159" selection-end-line="11" selection-end-column="159" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Webscraping/UrlScrapers/localScrape.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="159" selection-start-line="11" selection-start-column="159" selection-end-line="11" selection-end-column="159" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Webscraping/UrlScrapers/politicsScrape.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -474,10 +422,60 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Webscraping/UrlScrapers/searchUrlsMethod.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="488">
+          <caret line="37" column="61" lean-forward="true" selection-start-line="37" selection-start-column="61" selection-end-line="37" selection-end-column="61" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Webscraping/UrlScrapers/archiveScrape.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="11" column="43" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
+          <caret line="11" column="170" selection-start-line="11" selection-start-column="170" selection-end-line="11" selection-end-column="170" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Webscraping/UrlScrapers/entertainmentScrape.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="159" selection-start-line="11" selection-start-column="159" selection-end-line="11" selection-end-column="159" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Webscraping/UrlScrapers/latestScrape.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="37" lean-forward="true" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Webscraping/UrlScrapers/localScrape.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="41" lean-forward="true" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Webscraping/contentScrape.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="67" column="88" lean-forward="true" selection-start-line="67" selection-start-column="88" selection-end-line="67" selection-end-column="88" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>

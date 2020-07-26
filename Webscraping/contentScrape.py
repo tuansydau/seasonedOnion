@@ -65,7 +65,7 @@ def write_content(headlineList, contentList, metaDataList):
     print(df_urls)
     df_urls.to_csv(r'C:\Users\Tuan\Desktop\Seasoned Onion\archiveContentMeta.csv')
 
-urlList = pd.read_csv(r'C:\Users\Tuan\Desktop\Seasoned Onion\articleUrls.csv')
+urlList = pd.read_csv(r'C:\Users\Tuan\Documents\GitHub\seasonedOnion\Webscraping\UrlScrapers\URLs\archiveUrls - Final.csv')
 
 #print("-----------------------")
 #print(urlList)

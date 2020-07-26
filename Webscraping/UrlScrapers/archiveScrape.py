@@ -9,4 +9,4 @@ option.add_argument('--incognito')
 driver = webdriver.Chrome(executable_path='C:/bin/chromedriver.exe', options=option)
 driver.get("https://www.theonion.com/tag/archive")
 archiveUrls = []
-searchUrl(driver, "/html/body/div[3]/div[4]/main/div/div[4]/div/a", "sc-759qgu-0", r'C:\Users\Tuan\Documents\GitHub\seasonedOnion\Webscraping\UrlScrapers\URLs\archiveUrlsTesting.csv', archiveUrls)
+searchUrl(driver, "/html/body/div[3]/div[4]/main/div/div[4]/div/a", "sc-759qgu-0", r'C:\Users\Tuan\Documents\GitHub\seasonedOnion\Webscraping\UrlScrapers\URLs\archiveUrls.csv', archiveUrls)
