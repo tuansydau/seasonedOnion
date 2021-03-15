@@ -1,6 +1,7 @@
 let express = require("express");
-let nj = require('numjs');
 let app = express();
+const tf = require("@tensorflow/tfjs-node");
+const n = tf.tensor;
 
 app.use(function(req, res, next) {
     console.log(`${new Date()} - ${req.method} request for ${req.url}`);
@@ -9,6 +10,6 @@ app.use(function(req, res, next) {
 
 app.use(express.static("../static"));
 
-app.listen(81, function() {
+app.listen(100, function() {
     console.log("Serving static on 81");
 })

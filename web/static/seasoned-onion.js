@@ -1,30 +1,46 @@
-let model;
-function* enumerate (it, start = 0)
-{ let i = start
-  for (const x of it)
-    yield [i++, x]
-}
 
-(async function() {
-    model = await tf.loadModel('http://localhost:81/tfjs_model/model.json');
+/*
+function* enumerate(it, start = 0) {
+    let i = start
+    for (const x of it)
+        yield [i++, x]
+}
+*/
+
+import tf from "@tensorflow/tfjs-node";
+
+let model;
+(async function () {
+    model = await tf.loadModel('http://localhost:81/tfjs_model/model-2.json');
     $('progress-bar').hide();
 })();
 
 var content = document.getElementById("input-text").value;
+
 var button = document.getElementById("generate-button");
-var chars = ["", "!", "#", "$", "%", "&", "'", "(", ")", "*", "+" , "-", ".", "/", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", ":", ";", "=", ">", "?", "@", "[ ]", "_", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
-button.onclick = function(){
-    let generated = "";
-    let sentence = "blah"; // textbox
-    
-    for ( let i = 0; i < 400; i++) {
-        let x_pred = nj.zeros([1, 40, 61]);
-        for (const[i, x] of enumerate(sentence)){
-            console.log(i,x);
-            x_pred[0, x, ]
-            let preds = model.predict(x_pred, verbose=0)[0]
-        }
+/*
+var chars = [" ", "!", "#", "$", "%", "&", "'", "(", ")", "*", "+", "-", ".", "/", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", ":", ";", "=", ">", "?", "@", "[ ]", "_", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+var dict = [];
+*/
+
+/*
+for (var j = 0; j < 61; j++) {
+    dict.push({
+        key: chars[j],
+        value: j
+    });
+}
+*/
+button.onclick = function () {
+    let next_char = tf.constant(['test']);
+    let result = [next_char];
+
+    for (let i = 0; i < 1000; i++) {
+        next_char, states = model.generate_one_step(next_char, states = None);
+        result = result.concat(next_char);
     }
+    result = tf.strings.join(result)
+    console.log(result);
 }
 /*
 

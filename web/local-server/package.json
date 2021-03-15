@@ -2,9 +2,9 @@
     "name": "tensorflowjs",
     "version": "1.0.0",
     "dependencies": {
+        "@tensorflow/tfjs-node": "^3.3.0",
         "express": "latest",
-        "numjs": "git+https://github.com/nicolaspanel/numjs.git",
         "require": "latest",
-        "sharp": "^0.27.2"
+        "tensorflow": "latest"
     }
 }
